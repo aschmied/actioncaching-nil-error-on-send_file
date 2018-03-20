@@ -1,4 +1,6 @@
 class FilesController < ApplicationController
+  caches_action :index
+
   def index
     respond_to do |format|
       format.zip { send_zip }
