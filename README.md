@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app demonstrates an [ActionCaching crash](https://github.com/rails/actionpack-action_caching/issues/57) attempting to use `caches_action` on an action that sends a file using `send_file`. To reproduce:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Clone this repo
+1. `bundle install`
+1. `ruby bin\rails server`
+1. Navigate to "http://localhost:3000/files.zip"
